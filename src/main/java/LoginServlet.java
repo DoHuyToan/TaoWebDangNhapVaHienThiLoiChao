@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+//  Để doPost thì trên thanh URL ko có username, password;  Để doGet thì có trên thanh URL
         // request.getParameter() được sử dụng để lấy tham số được đẩy lên từ form.
         String username = req.getParameter("username");
         String password = req.getParameter("password");
